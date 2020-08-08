@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/theanshulgupta
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://anshulgupta.com
+  * I am theanshulgupta (https://keybase.io/theanshulgupta) on keybase.
+  * I have a public key ASDRkw3XN5GrYHG2jWIrINjB8Va0Tyv1AacNNO-SsYGJVwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d1930dd73791ab6071b68d622b20d8c1f156b44f2bf501a70d34ef92b18189570a",
+      "host": "keybase.io",
+      "kid": "0120d1930dd73791ab6071b68d622b20d8c1f156b44f2bf501a70d34ef92b18189570a",
+      "uid": "f3b65b1c34cb2714540e1aedbae5e619",
+      "username": "theanshulgupta"
+    },
+    "merkle_root": {
+      "ctime": 1596921952,
+      "hash": "bfd3944bf0ed33feea313246544807942086d37e46badb0de769996fedd83e10e416c0229a408976b4d9a0f47002a8094a9b40e778ea410b5e264729a9869eda",
+      "hash_meta": "a3647160d4e09dc42e564ee1b16515251932e833393831a4ce2338e622c94a7f",
+      "seqno": 17227022
+    },
+    "service": {
+      "entropy": "dxUPaP1YnysTvrfXFTeRnFdl",
+      "hostname": "anshulgupta.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1596922018,
+  "expire_in": 504576000,
+  "prev": "21a1848789e35967decd5ad94bc06fa2a08955c884d0d758dded39e5458ac0ae",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg0ZMN1zeRq2Bxto1iKyDYwfFWtE8r9QGnDTTvkrGBiVcKp3BheWxvYWTESpcCCMQgIaGEh4njWWfezVrZS8BvoqCJVciE0NdY3e055UWKwK7EICyAm829BuwMREU0oX+2iuUbsBQkJOi7/KGfP4RcHrlgAgHCo3NpZ8RAd0HSSZ2VBBPVIMtwW0P+6Q9IuSNXgCAcZMY/kdoJvQf9Pi/I5bvvIBhD5nuNkL0aiA3ItUwvO9OmqxxdGAbrAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIFJ+v8DdGAWwkIfWv4oQMr8Nl4VBNYgB7lNLdOxka/Co3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/theanshulgupta
+
+==================================================================
