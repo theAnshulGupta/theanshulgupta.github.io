@@ -17,7 +17,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   /* these three things center it perfectly */
-  animation: fill 0.5s ease forwards 2s;
+  animation: fill 0.5s ease forwards 3s;
 }
 
 #a1 {
@@ -25,62 +25,62 @@ body {
   /* stroke-dasharray causes spaces in text; */
   stroke-dashoffset: 517.3174438476562px;
   /* pushes everything around */
-  animation: line-animation 2s ease forwards;
+  animation: line-animation 3s ease forwards;
 }
 #n {
   stroke-dasharray: 406.942626953125px;
   stroke-dashoffset: 406.942626953125px;
-  animation: line-animation 2.2s ease forwards 0.2s;
+  animation: line-animation 3s ease forwards;
 }
 #s {
   stroke-dasharray: 392.0910949707031px;
   stroke-dashoffset: 392.0910949707031px;
-  animation: line-animation 2s ease forwards 0.4s;
+  animation: line-animation 3s ease forwards;
 }
 #h {
   stroke-dasharray: 466.5958251953125px;
   stroke-dashoffset: 466.5958251953125px;
-  animation: line-animation 2s ease forwards 0.6s;
+  animation: line-animation 3s ease forwards;
 }
 #u1 {
   stroke-dasharray: 411.7287292480469px;
   stroke-dashoffset: 411.7287292480469px;
-  animation: line-animation 2s ease forwards 0.8s;
+  animation: line-animation 3s ease forwards;
 }
 #l {
   stroke-dasharray: 257.6620178222656px;
   stroke-dashoffset: 257.6620178222656px;
-  animation: line-animation 2s ease forwards 1s;
+  animation: line-animation 3s ease forwards;
 }
 
 #g {
   stroke-dasharray: 606.0850830078125px;
   stroke-dashoffset: 606.0850830078125px;
-  animation: line-animation 2s ease forwards 1s;
+  animation: line-animation 3s ease forwards;
 }
 
 #u2 {
   stroke-dasharray: 411.72894287109375px;
   stroke-dashoffset: 411.72894287109375px;
-  animation: line-animation 2s ease forwards 1s;
+  animation: line-animation 3s ease forwards;
 }
 
 #p {
   stroke-dasharray: 549.8375854492188px;
   stroke-dashoffset: 549.8375854492188px;
-  animation: line-animation 2s ease forwards 1s;
+  animation: line-animation 3s ease forwards;
 }
 
 #t {
   stroke-dasharray: 311.8351745605469px;
   stroke-dashoffset: 311.8351745605469px;
-  animation: line-animation 2s ease forwards 1s;
+  animation: line-animation 3s ease forwards;
 }
 
 #a2 {
   stroke-dasharray: 484.72552490234375px;
   stroke-dashoffset: 484.72552490234375px;
-  animation: line-animation 2s ease forwards 1s;
+  animation: line-animation 3s ease forwards;
 }
 
 @keyframes line-animation {
