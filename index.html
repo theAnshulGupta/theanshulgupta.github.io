@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/user.png" />
+    <meta
+      name="description"
+      content="Hey! I'm Anshul Gupta and welcome to my personal website."
+    />
+
+    <meta name="author" content="Anshul Gupta" />
+    <meta property="og:title" content="Anshul Gupta ~ Personal Website" />
+    <meta property="og:site_name" content="Anshul Gupta" />
+    <meta
+      property="og:description"
+      content="Hey! I'm Anshul Gupta and welcome to my personal website."
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/particle.css" />
     <link rel="stylesheet" href="css/svg.css" />
@@ -19,9 +34,10 @@
     <title>Anshul Gupta</title>
   </head>
   <body>
-    <div id="particles-js" class="particle-fade"></div>
-    <section id="top">
-      <section id="name">
+    <section id="top" href="#top">
+      <div id="particles-js" class="particle-fade"></div>
+
+      <div id="name">
         <svg
           width="887"
           height="137"
@@ -97,13 +113,12 @@
             id="a2"
           />
         </svg>
-      </section>
+      </div>
       <div
         id="aboutButton"
         class="animate__animated animate__bounceInUp"
-        onclick="location.href='index.html';"
+        onclick="location.href='index.html#top';"
       >
-        <!-- About Me -->
         <svg
           width="308"
           height="45"
@@ -192,7 +207,7 @@
       </div>
     </section>
 
-    <div style="font-size: 100px">HELLO</div>
+    <section id="about" href="#about"></section>
   </body>
 
   <script src="js/jquery.min.js"></script>
