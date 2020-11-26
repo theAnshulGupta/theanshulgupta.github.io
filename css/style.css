@@ -1,40 +1,57 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; /* makes site more responsive */
-}
-
 body {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(32, 35, 48);
-  margin: 0;
-  padding: 0;
+  font-family: "Raleway", sans-serif;
+  color: white;
 }
 
-/* #name {
-  z-index: 1;
-  padding-top: 10%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+/* .particle-fade {
   width: 100%;
-  height: 100vh;
-  animation: fill 0.5s ease forwards 2s;
-} */
-
-.fade-in {
-  opacity: 0;
-  animation-delay: 2s;
-  animation: fadeIn ease 2s;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: fadeIn 1.5s ease 1.75s;
+  animation-fill-mode: backwards;
+  z-index: 0;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0.6;
   }
   100% {
     opacity: 1;
   }
+} */
+
+#top {
+  z-index: 1;
+}
+
+#name {
+  z-index: 2;
+}
+
+#anshul {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 3s;
+}
+
+#aboutButton {
+  position: absolute;
+  left: 46.5%;
+  top: 63%;
+  transform: translate(-50%, -50%);
+  cursor: default;
+  font-weight: 200;
+  font-size: 48px;
+  animation-delay: 2.5s;
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
