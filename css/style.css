@@ -27,7 +27,22 @@ body {
 } */
 
 #top {
-  z-index: 1;
+  height: 100vh;
+  background-color: #262c53;
+}
+
+section#top .fade {
+  display: block;
+  animation: fadeIn 5s;
+}
+
+.particle-fade {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #name {
@@ -59,4 +74,13 @@ body {
 #about {
   width: 100%;
   height: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
