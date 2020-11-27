@@ -2,8 +2,8 @@
 canvas {
   display: block;
   opacity: 0;
-  animation: fadeIn 0.3s;
-  animation-delay: 2.85s;
+  animation: fadeIn 3s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   z-index: 10;
 }
