@@ -5,6 +5,7 @@ canvas {
   animation: fadeIn 0.3s;
   animation-delay: 2.85s;
   animation-fill-mode: forwards;
+  z-index: 10;
 }
 
 /* ---- particles.js container ---- */
