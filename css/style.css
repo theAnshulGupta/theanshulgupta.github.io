@@ -3,29 +3,6 @@ body {
   color: white;
 }
 
-/* .particle-fade {
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: fadeIn 1.5s ease 1.75s;
-  animation-fill-mode: backwards;
-  z-index: 0;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
 #top {
   height: 100vh;
   background-color: #262c53;
@@ -58,17 +35,24 @@ section#top .fade {
 }
 
 #aboutButton {
-  position: absolute;
-  left: 44%;
-  top: 63%;
-  transform: translate(-50%, -50%);
-  cursor: default;
-  font-weight: 200;
-  font-size: 48px;
-  animation-delay: 2.5s;
-  color: #ffffff;
+  /* position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%); */
+  margin: auto;
+  width: 50%;
+  height: 70%;
+  /* border: 3px solid #73ad21; */
+  /* padding: 10px; */
 
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  animation-delay: 2.5s;
+}
+
+#aboutSVG {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
 }
 
 #about {
@@ -84,3 +68,9 @@ section#top .fade {
     opacity: 1;
   }
 }
+/* @media only screen and (max-width: 1250px),
+  only screen and (max-height: 750px) {
+  svg {
+    height: 9.6em;
+  }
+} */
