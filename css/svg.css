@@ -1,17 +1,3 @@
-/* 
- * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(32, 35, 48); 
-}
-*/
-
 #a1 {
   stroke-dasharray: 517.3174438476562px;
   stroke-dashoffset: 517.3174438476562px;
@@ -19,7 +5,7 @@ body {
 }
 #n {
   stroke-dasharray: 406.942626953125px;
-  stroke-dashoffset: 406.942626953125px;
+  stroke-dashoffset: 570px;
   animation: line-animation 3s ease forwards;
 }
 #s {
@@ -29,17 +15,17 @@ body {
 }
 #h {
   stroke-dasharray: 466.5958251953125px;
-  stroke-dashoffset: 466.5958251953125px;
+  stroke-dashoffset: 570px;
   animation: line-animation 3s ease forwards;
 }
 #u1 {
   stroke-dasharray: 411.7287292480469px;
-  stroke-dashoffset: 411.7287292480469px;
+  stroke-dashoffset: 570px;
   animation: line-animation 3s ease forwards;
 }
 #l {
   stroke-dasharray: 257.6620178222656px;
-  stroke-dashoffset: 257.6620178222656px;
+  stroke-dashoffset: 900px;
   animation: line-animation 3s ease forwards;
 }
 
@@ -51,7 +37,7 @@ body {
 
 #u2 {
   stroke-dasharray: 411.72894287109375px;
-  stroke-dashoffset: 411.72894287109375px;
+  stroke-dashoffset: 570px;
   animation: line-animation 3s ease forwards;
 }
 
@@ -63,14 +49,15 @@ body {
 
 #t {
   stroke-dasharray: 311.8351745605469px;
-  stroke-dashoffset: 311.8351745605469px;
+  /* stroke-dashoffset: 311.8351745605469px; */
+  stroke-dashoffset: 900px;
   animation: line-animation 3s ease forwards;
 }
 
 #a2 {
   stroke-dasharray: 484.72552490234375px;
-  stroke-dashoffset: 484.72552490234375px;
-  animation: line-animation 3s ease forwards;
+  stroke-dashoffset: 700px;
+  animation: line-animation 4s ease forwards;
 }
 
 @keyframes line-animation {
@@ -85,15 +72,4 @@ body {
   to {
     fill: white;
   }
-  /* 0% {
-    stroke-dashoffset: 2800;
-    fill: transparent;
-  }
-  75% {
-    fill: transparent;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: white;
-  } */
 }
