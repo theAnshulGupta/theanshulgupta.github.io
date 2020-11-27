@@ -1,7 +1,7 @@
 #a1 {
   stroke-dasharray: 517.3174438476562px;
-  stroke-dashoffset: 517.3174438476562px;
-  animation: line-animation 3s ease forwards;
+  stroke-dashoffset: 517px;
+  animation: line-animation 5.3s ease forwards;
 }
 #n {
   stroke-dasharray: 406.942626953125px;
@@ -31,25 +31,24 @@
 
 #g {
   stroke-dasharray: 606.0850830078125px;
-  stroke-dashoffset: 606.0850830078125px;
+  stroke-dashoffset: 740px;
   animation: line-animation 3s ease forwards;
 }
 
 #u2 {
   stroke-dasharray: 411.72894287109375px;
-  stroke-dashoffset: 570px;
-  animation: line-animation 3s ease forwards;
+  stroke-dashoffset: 640px;
+  animation: line-animation 3s ease backwards;
 }
 
 #p {
   stroke-dasharray: 549.8375854492188px;
-  stroke-dashoffset: 549.8375854492188px;
-  animation: line-animation 3s ease forwards;
+  stroke-dashoffset: 900px;
+  animation: line-animation 5.3s ease forwards;
 }
 
 #t {
   stroke-dasharray: 311.8351745605469px;
-  /* stroke-dashoffset: 311.8351745605469px; */
   stroke-dashoffset: 900px;
   animation: line-animation 3s ease forwards;
 }
