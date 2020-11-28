@@ -22,6 +22,21 @@ section#top .fade {
   right: 0;
 }
 
+#hey {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  animation-delay: 2.8s;
+}
+
+#heySVG {
+  bottom: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 #name {
   z-index: 2;
 }
@@ -39,16 +54,11 @@ section#top .fade {
   left: 50%;
   top: 65%;
   transform: translate(-50%, -50%);
-  /* margin: auto;
-  width: 50%;
-  height: 70%; */
-  /* border: 3px solid #73ad21; */
-  /* padding: 10px; */
-  /* z-index: -1; */
   animation-delay: 2.8s;
 }
 
 #aboutSVG {
+  display: none;
   position: absolute;
   left: 50%;
   top: 60%;
@@ -73,4 +83,23 @@ section#top .fade {
     width: 443;
     height: 50;
   }
+}
+
+.grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.grow-rotate:hover,
+.grow-rotate:focus,
+.grow-rotate:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+  background-color: pink;
 }
