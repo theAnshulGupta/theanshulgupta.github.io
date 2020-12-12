@@ -23,12 +23,12 @@ section#top .fade {
 }
 
 #hey {
-  display: none;
+  /* display: none; */
   position: absolute;
   left: 50%;
   top: 42%;
   transform: translate(-50%, -50%);
-  animation-delay: 2.8s;
+  animation-delay: 3s;
 }
 
 #heySVG {
@@ -54,11 +54,11 @@ section#top .fade {
   left: 50%;
   top: 65%;
   transform: translate(-50%, -50%);
-  animation-delay: 2.8s;
+  animation-delay: 3s;
 }
 
 #aboutSVG {
-  display: none;
+  /* display: none; */
   position: absolute;
   left: 50%;
   top: 60%;
@@ -102,4 +102,9 @@ section#top .fade {
   -webkit-transform: scale(1.1) rotate(4deg);
   transform: scale(1.1) rotate(4deg);
   background-color: pink;
+}
+
+#about {
+  background-color: black;
+  color: white;
 }
