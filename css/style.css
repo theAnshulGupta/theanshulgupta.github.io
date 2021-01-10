@@ -65,6 +65,7 @@ section#top .fade {
   top: 65%;
   transform: translate(-50%, -50%);
   animation-delay: 3s;
+  display: none;
 }
 
 #aboutSVG {
