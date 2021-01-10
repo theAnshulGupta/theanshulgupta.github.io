@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   function setStep(index) {
     $buttons
-      .removeClass("step-1 step-0 step-3 step-2")
+      .removeClass("step-0 step-1 step-3 step-2")
       .addClass("step-" + curStep);
   }
 
@@ -44,7 +44,7 @@ $(document).ready(function () {
   $toggle.on("click", function () {
     if (!open) animate();
     else {
-      $buttons.removeClass("step-1 step-0 step-3 step-2");
+      $buttons.removeClass("step-0 step-1 step-3 step-2");
       clearTimeout(lastTimeout);
       open = false;
       curStep = 0;
