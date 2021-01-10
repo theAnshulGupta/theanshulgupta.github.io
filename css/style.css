@@ -1,29 +1,15 @@
-:root {
-  font-size: 16px;
-  /* font-family: "Open Sans"; */
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-  --transition-speed: 600ms;
-}
-
 *,
 *:before,
 *:after {
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
 }
 
 #top {
   height: 100vh;
   background-color: black;
 }
-
-/* section#top .fade {
-  display: block;
-  animation: fadeIn 5s;
-} */
 
 .particle-fade {
   background-color: black;
@@ -35,7 +21,25 @@
 }
 
 /* navbar */
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+
+body {
+  margin: 0;
+}
+
+#navbar {
+  padding: none;
+}
 .navbar {
+  padding-left: 0;
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
@@ -43,7 +47,11 @@
   font-family: "Raleway";
   overflow: hidden;
   margin: 0;
-  padding: 0;
+  padding-right: 0;
+}
+
+#navbar-nav {
+  padding: none;
 }
 
 .navbar-nav {
@@ -54,6 +62,7 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
+  padding: 0;
 }
 
 .nav-item {
@@ -141,7 +150,7 @@
   transform: rotate(-540deg);
 }
 
-/* Small */
+/* Small screens */
 @media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
@@ -161,12 +170,12 @@
     justify-content: center;
   }
 
-  section {
+  main {
     margin: 0;
   }
 }
 
-/* Large */
+/* Large screens */
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
@@ -228,6 +237,8 @@
 .solar #solarIcon {
   display: block;
 }
+
+/* nav ends here */
 
 #hey {
   /* display: none; */
