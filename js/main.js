@@ -19,6 +19,7 @@ $(document).ready(function () {
 
   for (let i = 0; i <= 3; i++) {
     steps[i] = "demo__step-" + i;
+    console.log(steps[i]);
   }
 
   function setStep(index) {

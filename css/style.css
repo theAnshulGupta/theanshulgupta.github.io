@@ -106,8 +106,8 @@ body {
   color: white;
 }
 
-/* CONTACT */
-.demo {
+/* Social */
+.socials {
   animation: 3s ease 0s normal forwards 1 fadeIn;
   animation-delay: 3s;
   opacity: 0;
