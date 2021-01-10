@@ -45,10 +45,6 @@ section#top .fade {
   transform: translate(-50%, -50%);
 }
 
-#name {
-  z-index: 2;
-}
-
 #anshul {
   position: absolute;
   left: 50%;
@@ -57,6 +53,12 @@ section#top .fade {
   animation: fill 0.5s ease forwards 3s;
   /* background: grey; */
   /* padding: 2vh; */
+  width: 100%;
+}
+@media (max-width: 950px) {
+  #anshul {
+    width: 90%;
+  }
 }
 
 #aboutButton {
@@ -88,12 +90,6 @@ section#top .fade {
   }
   to {
     opacity: 1;
-  }
-}
-@media (max-width: 950px) {
-  #anshul {
-    width: 443;
-    height: 50;
   }
 }
 
