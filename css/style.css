@@ -53,12 +53,20 @@ section#top .fade {
   animation: fill 0.5s ease forwards 3s;
   /* background: grey; */
   /* padding: 2vh; */
-  width: 100%;
 }
 @media (max-width: 950px) {
   #anshul {
     width: 90%;
   }
+}
+
+@media (max-width: 620px) {
+  #heySVG {
+    width: 150px;
+    top: 12%;
+  }
+}
+@media (max-width: 750px) {
 }
 
 #aboutButton {
