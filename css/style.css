@@ -238,6 +238,74 @@ body {
   opacity: 0;
 }
 
+/* large screen arrow */
+
+#arrow-large a {
+  position: absolute;
+  top: 50%;
+  left: 10vh;
+  z-index: 2;
+  display: inline-block;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 "Josefin Sans", sans-serif;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+#arrow-large a:hover {
+  opacity: 0.5;
+}
+
+#arrow-large a {
+  padding-top: 70px;
+}
+#arrow-large a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(400deg);
+  transform: rotate(400deg);
+  -webkit-animation: arrow-large-animation 1.5s infinite;
+  animation: arrow-large-animation 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes arrow-large-animation {
+  0% {
+    -webkit-transform: rotate(400deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(400deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes arrow-large-animation {
+  0% {
+    transform: rotate(400deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(400deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+/* small screen arrows */
+
 #arrow-small a {
   position: absolute;
   bottom: 20px;
@@ -271,11 +339,11 @@ body {
   border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  -webkit-animation: arrow-animation 1.5s infinite;
-  animation: arrow-animation 1.5s infinite;
+  -webkit-animation: arrow-small-animation 1.5s infinite;
+  animation: arrow-small-animation 1.5s infinite;
   box-sizing: border-box;
 }
-@-webkit-keyframes arrow-animation {
+@-webkit-keyframes arrow-small-animation {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
     opacity: 0;
@@ -288,7 +356,7 @@ body {
     opacity: 0;
   }
 }
-@keyframes arrow-animation {
+@keyframes arrow-small-animation {
   0% {
     transform: rotate(-45deg) translate(0, 0);
     opacity: 0;
@@ -302,11 +370,16 @@ body {
   }
 }
 
-/* @media only screen and (min-width: 600px) {
-  #arrow {
+@media only screen and (min-width: 600px) {
+  #arrow-small {
     display: none;
   }
-} */
+}
+@media only screen and (max-width: 600px) {
+  #arrow-large {
+    display: none;
+  }
+}
 
 /* .about-me {
   position: absolute;
