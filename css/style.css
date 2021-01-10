@@ -16,10 +16,10 @@ body {
   background-color: black;
 }
 
-section#top .fade {
+/* section#top .fade {
   display: block;
   animation: fadeIn 5s;
-}
+} */
 
 .particle-fade {
   background-color: black;
@@ -107,6 +107,22 @@ section#top .fade {
 }
 
 /* CONTACT */
+.demo {
+  animation: 3s ease 0s normal forwards 1 fadeIn;
+  animation-delay: 3s;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .demo__buttons {
   position: absolute;
