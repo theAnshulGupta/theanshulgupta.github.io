@@ -131,42 +131,42 @@ section#top .fade {
   width: 200px;
   height: 200px;
   /* transform: translate(-100px, -100px); */
-  filter: url("#goo");
+  filter: url("#socials");
 }
-.demo__buttons.step-0 .demo__social-btn-1,
+.demo__buttons.step-0 .social-1,
 .demo__buttons.step-0 .social-2,
-.demo__buttons.step-0 .demo__social-btn-3,
-.demo__buttons.step-0 .demo__social-btn-4 {
+.demo__buttons.step-0 .social-3,
+.demo__buttons.step-0 .social-4 {
   transform: translate3d(-50px, -50px, 0);
 }
-.demo__buttons.step-1 .demo__social-btn-1 {
+.demo__buttons.step-1 .social-1 {
   transform: translate3d(-50px, -50px, 0);
 }
 .demo__buttons.step-1 .social-2,
-.demo__buttons.step-1 .demo__social-btn-3,
-.demo__buttons.step-1 .demo__social-btn-4 {
+.demo__buttons.step-1 .social-3,
+.demo__buttons.step-1 .social-4 {
   transform: translate3d(-50px, 50px, 0);
 }
-.demo__buttons.step-2 .demo__social-btn-1 {
+.demo__buttons.step-2 .social-1 {
   transform: translate3d(-50px, -50px, 0);
 }
 .demo__buttons.step-2 .social-2 {
   transform: translate3d(-50px, 50px, 0);
 }
-.demo__buttons.step-2 .demo__social-btn-3,
-.demo__buttons.step-2 .demo__social-btn-4 {
+.demo__buttons.step-2 .social-3,
+.demo__buttons.step-2 .social-4 {
   transform: translate3d(50px, 50px, 0);
 }
-.demo__buttons.step-3 .demo__social-btn-1 {
+.demo__buttons.step-3 .social-1 {
   transform: translate3d(-50px, -50px, 0);
 }
 .demo__buttons.step-3 .social-2 {
   transform: translate3d(-50px, 50px, 0);
 }
-.demo__buttons.step-3 .demo__social-btn-3 {
+.demo__buttons.step-3 .social-3 {
   transform: translate3d(50px, 50px, 0);
 }
-.demo__buttons.step-3 .demo__social-btn-4 {
+.demo__buttons.step-3 .social-4 {
   transform: translate3d(50px, -50px, 0);
 }
 .demo__social-btn {
