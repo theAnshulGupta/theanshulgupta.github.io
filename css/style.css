@@ -188,9 +188,22 @@ body {
 }
 
 .demo__social-btn:hover {
-  color: #106279;
+  /* color: #106279; */
   box-shadow: 0 0 15px white;
 }
+.social-1:hover {
+  color: #357cd3;
+}
+.social-2:hover {
+  color: #e1306c;
+}
+.social-3:hover {
+  color: #1da1f2;
+}
+.social-4:hover {
+  color: rgba(43, 33, 33, 0.637);
+}
+
 .demo__open-btn {
   position: absolute;
   left: 65px;
