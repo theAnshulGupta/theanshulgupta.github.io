@@ -113,6 +113,9 @@
     <!-- svg -->
     <link rel="stylesheet" href="svg/svg.css" />
 
+    <!-- slider -->
+    <link rel="stylesheet" href="css/slider.css" />
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -161,7 +164,6 @@
     </header> -->
     <section id="top" href="#top">
       <div id="particles-js"></div>
-
       <div id="name">
         <div id="hey" class="animate__animated animate__bounceInDown">
           <svg
@@ -388,18 +390,265 @@
           </svg>
         </div>
       </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        width="0"
+        height="0"
+      >
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="demo">
+        <div class="demo__buttons">
+          <div class="demo__social-btn-4 demo__social-btn">
+            <i class="fa fa-github"></i>
+          </div>
+          <div class="demo__social-btn-3 demo__social-btn">
+            <i class="fa fa-linkedin"></i>
+          </div>
+          <div class="demo__social-btn-2 demo__social-btn">
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div class="demo__social-btn-1 demo__social-btn">
+            <i class="fa fa-twitter"></i>
+          </div>
+          <div class="demo__open-btn"><i class="fa fa-share-alt"></i></div>
+        </div>
+      </div>
     </section>
 
     <section id="about" href="#about">
       <h1>Hi there! I'm Anshul Gupta</h1>
       <i class="fa fa-github fa-4x icon-3d"></i>
       <i class="fa fa-linkedin fa-4x icon-3d"></i>
-
       <p>Here are a few things about me:</p>
       <p>ay stop scrolling here im still making the site</p>
+      <!-- <div class="row">
+        <div class="slider-container" style="z-index: 0" id="slider">
+          <div class="slider-control left inactive"></div>
+          <div class="slider-control right"></div>
+          <ul class="slider-pagi"></ul>
+          <div class="slider">
+            <div class="slide slide-0 active">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg
+                  class="slide__overlay"
+                  viewBox="0 0 720 405"
+                  preserveAspectRatio="xMaxYMax slice"
+                >
+                  <path
+                    class="slide__overlay-path"
+                    d="M0,0 150,0 500,405 0,405"
+                  />
+                </svg>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading">AUesome</h2>
+                  <p class="slide__text-desc">
+                    Through my passion for helping young children, developing,
+                    and special needs, I co-founded AUesome LLC. We combine the
+                    virtual and physical world for children with autism through
+                    custom therapy kits and online videos and activities. We
+                    have distributed 200+ kits in the last 6 months, been
+                    featured on the news (<a
+                      target="_blank"
+                      href="https://open.spotify.com/episode/2usjfkivcaEkxJRUhICQWm?si=SRjOXuTiSY-08aEKNXkCeg"
+                      >CharityU</a
+                    >), and raised almost $2000 on
+                    <a
+                      target="_blank"
+                      href="https://www.gofundme.com/f/auesome-athome-therapy-for-children-with-autism"
+                      >GoFundMe</a
+                    >.
+                  </p>
+                  <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Learn More</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-1">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg
+                  class="slide__overlay"
+                  viewBox="0 0 720 405"
+                  preserveAspectRatio="xMaxYMax slice"
+                >
+                  <path
+                    class="slide__overlay-path"
+                    d="M0,0 150,0 500,405 0,405"
+                  />
+                </svg>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading">ThetaHacks</h2>
+                  <p class="slide__text-desc">
+                    My interests in hacking were brought to the forefront when I
+                    formed ThetaHacks, a high-school virtual hackathon. As a
+                    lead and logistics director, I coordinate and plan events,
+                    prizes, outreach, design, and assist with web development.
+                    Our hackathon gained over 170 attendee signups in the first
+                    year alone!
+                  </p>
+                  <a
+                    class="slide__text-link"
+                    target="_blank"
+                    href="https://thetahacks.tech"
+                    >ThetaHacks I Site</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-2">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg
+                  class="slide__overlay"
+                  viewBox="0 0 720 405"
+                  preserveAspectRatio="xMaxYMax slice"
+                >
+                  <path
+                    class="slide__overlay-path"
+                    d="M0,0 150,0 500,405 0,405"
+                  />
+                </svg>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading" style="font-size: 4rem">
+                    To The Limit Maths
+                  </h2>
+                  <p class="slide__text-desc">
+                    I love math and teaching students, and co-founded To The
+                    Limit Maths, a 501c3 organization. As both an Algebra tutor
+                    and Tech Director, I plan events and overlook development of
+                    our website. We have a community with over 200 people and
+                    tutor in-school, competitive, and SAT math.
+                  </p>
+                  <a
+                    class="slide__text-link"
+                    target="_blank"
+                    href="https://tothelimitmaths.org"
+                    >TTLM site</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-3">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg
+                  class="slide__overlay"
+                  viewBox="0 0 720 405"
+                  preserveAspectRatio="xMaxYMax slice"
+                >
+                  <path
+                    class="slide__overlay-path"
+                    d="M0,0 150,0 500,405 0,405"
+                  />
+                </svg>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading">FRC Robotics</h2>
+                  <p class="slide__text-desc">
+                    On my school's robotics team TKO 1351, I am a CNC (Computer
+                    Numerical Control) Operator and Subsystems Engineer. I CAD
+                    and build various parts of our robotics and manufacturing
+                    them in our CNC Mill.
+                  </p>
+                  <a
+                    class="slide__text-link"
+                    target="_blank"
+                    href="https://amhsrobotics.com"
+                    >AMHS Robotics</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-4">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg
+                  class="slide__overlay"
+                  viewBox="0 0 720 405"
+                  preserveAspectRatio="xMaxYMax slice"
+                >
+                  <path
+                    class="slide__overlay-path"
+                    d="M0,0 150,0 500,405 0,405"
+                  />
+                </svg>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading">MIT LaunchX</h2>
+                  <p class="slide__text-desc">
+                    MIT LaunchX is an entrepreneurship program. Here we created
+                    AUesome, which was ranked 2nd among 63 teams, won in a
+                    multitude of contests, and was featured on LaunchX's social
+                    media, blog, home page, newsletter, and more. I was ranked
+                    in the top ten students in the entire international program
+                    (~300).
+                  </p>
+                  <a
+                    class="slide__text-link"
+                    target="_blank"
+                    href="https://launchx.com/blog/post?s=auesome-play-kits-for-children-with-autism"
+                    >LaunchX Blog</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-5">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg
+                  class="slide__overlay"
+                  viewBox="0 0 720 405"
+                  preserveAspectRatio="xMaxYMax slice"
+                >
+                  <path
+                    class="slide__overlay-path"
+                    d="M0,0 150,0 500,405 0,405"
+                  />
+                </svg>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading">Music</h2>
+                  <p class="slide__text-desc">
+                    As a percussionist, I was in my middle school's Advanced
+                    Band and am in my high school's Wind Ensemble and Pep Band
+                    as the section leader and captain. I also am in San Jose
+                    Youth Symphony's Chamber Orchestra as a Timpanist. I was
+                    accepted into COSMOS for Music and Technology. I play piano
+                    and am currently in Level 7 for Certificate of Merit.
+                  </p>
+                  <a
+                    class="slide__text-link"
+                    target="_blank"
+                    href="https://anshulgupta.com/music"
+                    >Music Page</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>-->
     </section>
   </body>
-
   <!-- scripts -->
   <script src="js/jquery.min.js"></script>
 
@@ -411,6 +660,8 @@
   <script src="js/main.js"></script>
 
   <!-- nav -->
+  <script src="js/slider.js"></script>
+
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
@@ -421,6 +672,4 @@
     integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
     crossorigin="anonymous"
   ></script>
-
-  <script src="js/nav.js"></script>
 </html>
