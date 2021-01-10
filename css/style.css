@@ -55,6 +55,8 @@ section#top .fade {
   top: 50%;
   transform: translate(-50%, -50%);
   animation: fill 0.5s ease forwards 3s;
+  /* background: grey; */
+  /* padding: 2vh; */
 }
 
 #aboutButton {
@@ -119,18 +121,7 @@ section#top .fade {
 }
 
 /* CONTACT */
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-}
 
-/* .demo {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(45deg, #894881, #462542);
-} */
 .demo__buttons {
   position: absolute;
   /* top: 50%; */
@@ -143,7 +134,7 @@ section#top .fade {
   filter: url("#goo");
 }
 .demo__buttons.step-0 .demo__social-btn-1,
-.demo__buttons.step-0 .demo__social-btn-2,
+.demo__buttons.step-0 .social-2,
 .demo__buttons.step-0 .demo__social-btn-3,
 .demo__buttons.step-0 .demo__social-btn-4 {
   transform: translate3d(-50px, -50px, 0);
@@ -151,7 +142,7 @@ section#top .fade {
 .demo__buttons.step-1 .demo__social-btn-1 {
   transform: translate3d(-50px, -50px, 0);
 }
-.demo__buttons.step-1 .demo__social-btn-2,
+.demo__buttons.step-1 .social-2,
 .demo__buttons.step-1 .demo__social-btn-3,
 .demo__buttons.step-1 .demo__social-btn-4 {
   transform: translate3d(-50px, 50px, 0);
@@ -159,7 +150,7 @@ section#top .fade {
 .demo__buttons.step-2 .demo__social-btn-1 {
   transform: translate3d(-50px, -50px, 0);
 }
-.demo__buttons.step-2 .demo__social-btn-2 {
+.demo__buttons.step-2 .social-2 {
   transform: translate3d(-50px, 50px, 0);
 }
 .demo__buttons.step-2 .demo__social-btn-3,
@@ -169,7 +160,7 @@ section#top .fade {
 .demo__buttons.step-3 .demo__social-btn-1 {
   transform: translate3d(-50px, -50px, 0);
 }
-.demo__buttons.step-3 .demo__social-btn-2 {
+.demo__buttons.step-3 .social-2 {
   transform: translate3d(-50px, 50px, 0);
 }
 .demo__buttons.step-3 .demo__social-btn-3 {
@@ -193,6 +184,7 @@ section#top .fade {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 .demo__social-btn:hover {
   color: #106279;
   box-shadow: 0 0 15px white;
