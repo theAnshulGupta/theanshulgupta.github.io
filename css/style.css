@@ -112,6 +112,12 @@ body {
   animation-delay: 3s;
   opacity: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .socials {
+    display: none;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -226,7 +232,7 @@ body {
   box-shadow: 0 0 15px white;
 }
 
-.about-me {
+/* .about-me {
   position: absolute;
   bottom: 10px;
   width: 100%;
@@ -240,4 +246,4 @@ body {
 }
 .about-me a:hover {
   color: #6666ff;
-}
+} */
