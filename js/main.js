@@ -9,8 +9,8 @@ for (let i = 0; i < text.length; i++) {
 ("use strict");
 
 $(document).ready(function () {
-  const $buttons = $(".demo__buttons");
-  const $toggle = $(".demo__open-btn");
+  const $buttons = $(".social-home__buttons");
+  const $toggle = $(".social-home__open-btn");
   let delay = 200;
   let steps = [];
   let open = false;
@@ -18,7 +18,7 @@ $(document).ready(function () {
   let curStep = 0;
 
   for (let i = 0; i <= 3; i++) {
-    steps[i] = "demo__step-" + i;
+    steps[i] = "social-home__step-" + i;
     console.log(steps[i]);
   }
 

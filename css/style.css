@@ -124,7 +124,7 @@ body {
   }
 }
 
-.demo__buttons {
+.social-home__buttons {
   position: absolute;
   /* top: 50%; */
   /* left: 50%; */
@@ -135,43 +135,43 @@ body {
   /* transform: translate(-100px, -100px); */
   filter: url("#socials");
 }
-.demo__buttons.step-0 .social-1,
-.demo__buttons.step-0 .social-2,
-.demo__buttons.step-0 .social-3,
-.demo__buttons.step-0 .social-4 {
+.social-home__buttons.step-0 .social-1,
+.social-home__buttons.step-0 .social-2,
+.social-home__buttons.step-0 .social-3,
+.social-home__buttons.step-0 .social-4 {
   transform: translate3d(-50px, -50px, 0);
 }
-.demo__buttons.step-1 .social-1 {
+.social-home__buttons.step-1 .social-1 {
   transform: translate3d(-50px, -50px, 0);
 }
-.demo__buttons.step-1 .social-2,
-.demo__buttons.step-1 .social-3,
-.demo__buttons.step-1 .social-4 {
+.social-home__buttons.step-1 .social-2,
+.social-home__buttons.step-1 .social-3,
+.social-home__buttons.step-1 .social-4 {
   transform: translate3d(-50px, 50px, 0);
 }
-.demo__buttons.step-2 .social-1 {
+.social-home__buttons.step-2 .social-1 {
   transform: translate3d(-50px, -50px, 0);
 }
-.demo__buttons.step-2 .social-2 {
+.social-home__buttons.step-2 .social-2 {
   transform: translate3d(-50px, 50px, 0);
 }
-.demo__buttons.step-2 .social-3,
-.demo__buttons.step-2 .social-4 {
+.social-home__buttons.step-2 .social-3,
+.social-home__buttons.step-2 .social-4 {
   transform: translate3d(50px, 50px, 0);
 }
-.demo__buttons.step-3 .social-1 {
+.social-home__buttons.step-3 .social-1 {
   transform: translate3d(-50px, -50px, 0);
 }
-.demo__buttons.step-3 .social-2 {
+.social-home__buttons.step-3 .social-2 {
   transform: translate3d(-50px, 50px, 0);
 }
-.demo__buttons.step-3 .social-3 {
+.social-home__buttons.step-3 .social-3 {
   transform: translate3d(50px, 50px, 0);
 }
-.demo__buttons.step-3 .social-4 {
+.social-home__buttons.step-3 .social-4 {
   transform: translate3d(50px, -50px, 0);
 }
-.demo__social-btn {
+.social-home__social-btn {
   position: absolute;
   left: 65px;
   top: 65px;
@@ -187,7 +187,7 @@ body {
   transition: all 0.2s ease;
 }
 
-.demo__social-btn:hover {
+.social-home__social-btn:hover {
   /* color: #106279; */
   box-shadow: 0 0 15px white;
 }
@@ -204,7 +204,7 @@ body {
   color: rgba(43, 33, 33, 0.637);
 }
 
-.demo__open-btn {
+.social-home__open-btn {
   position: absolute;
   left: 65px;
   top: 65px;
@@ -221,7 +221,7 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.demo__open-btn:hover {
+.social-home__open-btn:hover {
   color: #106279;
   box-shadow: 0 0 15px white;
 }
