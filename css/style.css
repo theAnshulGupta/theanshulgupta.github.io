@@ -232,7 +232,13 @@ body {
   box-shadow: 0 0 15px white;
 }
 
-#arrow a {
+.arrow-hide {
+  animation: 3s ease 0s normal forwards 1 fadeIn;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+#arrow-small a {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -247,14 +253,14 @@ body {
   transition: opacity 0.3s;
 }
 
-#arrow a:hover {
+#arrow-small a:hover {
   opacity: 0.5;
 }
 
-#arrow a {
+#arrow-small a {
   padding-top: 70px;
 }
-#arrow a span {
+#arrow-small a span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -295,6 +301,12 @@ body {
     opacity: 0;
   }
 }
+
+/* @media only screen and (min-width: 600px) {
+  #arrow {
+    display: none;
+  }
+} */
 
 /* .about-me {
   position: absolute;
