@@ -346,8 +346,6 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   animation: fill 0.5s ease forwards 3s;
-  /* background: grey; */
-  /* padding: 2vh; */
 }
 @media (max-width: 950px) {
   #anshul {
@@ -380,18 +378,6 @@ body {
   top: 60%;
   transform: translate(-50%, -50%);
 }
-
-#about {
-  width: 100%;
-  height: auto;
-  display: none;
-}
-
-#about {
-  background-color: black;
-  color: white;
-}
-
 /* ! end svg top area */
 
 /* ! Social start here */
@@ -516,7 +502,43 @@ body {
   box-shadow: 0 0 15px white;
 }
 
-/*! social buttons end here */
+/*? social buttons end here */
+
+/* ! social buttons version 2 3d */
+.icon-3d {
+  padding: 10px;
+  -webkit-animation: shake 200ms 10;
+  animation: shake 200ms 10;
+  color: black;
+}
+.icon-3d:hover {
+  -webkit-animation: shake 200ms infinite;
+  animation: shake 200ms infinite;
+}
+
+:root {
+  --shake-color1: rgba(244, 67, 54, 1);
+  --shake-color2: rgba(33, 150, 243, 1);
+}
+@keyframes shake {
+  0% {
+    text-shadow: 5px 4px var(--shake-color1), -5px -6px var(--shake-color2);
+  }
+  25% {
+    text-shadow: -5px -6px var(--shake-color1), 5px 4px var(--shake-color2);
+  }
+  50% {
+    text-shadow: 5px -4px var(--shake-color1), -8px 4px var(--shake-color2);
+  }
+  75% {
+    text-shadow: -8px -4px var(--shake-color1), -5px -4px var(--shake-color2);
+  }
+  100% {
+    text-shadow: -5px 0 var(--shake-color1), 5px -4px var(--shake-color2);
+  }
+}
+
+/*? social buttons new end */
 
 /*! arrows begin here */
 
@@ -532,7 +554,6 @@ body {
   position: absolute;
   top: 50%;
   left: 10vh;
-  z-index: 2;
   display: inline-block;
   transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
@@ -602,7 +623,6 @@ body {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
