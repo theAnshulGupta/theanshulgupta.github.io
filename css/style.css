@@ -50,6 +50,9 @@ canvas {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  opacity: none;
+  animation-delay: 3s;
+  animation: 7s ease 0s normal forwards 1 fadeIn;
 }
 
 .navbar-nav {
