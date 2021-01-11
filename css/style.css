@@ -27,7 +27,7 @@ canvas {
 }
 /*! end particles */
 
-/* navbar */
+/*! navbar */
 :root {
   font-size: 16px;
   font-family: "Open Sans";
@@ -245,9 +245,9 @@ body {
   display: block;
 }
 
-/* nav ends here */
+/*! nav ends here */
 
-/* SVGS */
+/*! SVGS */
 #a1 {
   stroke-dasharray: 517.3174438476562px;
   stroke-dashoffset: 517px;
@@ -322,9 +322,9 @@ body {
     fill: white;
   }
 }
-/* end svgs */
+/*? end svgs */
 
-/* svgs editing */
+/*! svgs editing/top area */
 #hey {
   /* display: none; */
   position: absolute;
@@ -392,7 +392,9 @@ body {
   color: white;
 }
 
-/* Social */
+/* ! end svg top area */
+
+/* ! Social start here */
 .socials {
   animation: 3s ease 0s normal forwards 1 fadeIn;
   animation-delay: 3s;
@@ -418,13 +420,10 @@ body {
 
 .social-home__buttons {
   position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
   right: 0px;
   bottom: 0px;
   width: 200px;
   height: 200px;
-  /* transform: translate(-100px, -100px); */
   filter: url("#socials");
 }
 .social-home__buttons.step-0 .social-1,
@@ -506,7 +505,6 @@ body {
   line-height: 70px;
   font-weight: 700;
   font-size: 30px;
-  /* font-family: sans-serif; */
   background: white;
   color: #261758;
   border-radius: 50%;
@@ -518,13 +516,17 @@ body {
   box-shadow: 0 0 15px white;
 }
 
+/*! social buttons end here */
+
+/*! arrows begin here */
+
 .arrow-hide {
   animation: 3s ease 0s normal forwards 1 fadeIn;
   animation-delay: 3s;
   opacity: 0;
 }
 
-/* large screen arrow */
+/* ? large screen arrow */
 
 #arrow-large a {
   position: absolute;
@@ -594,7 +596,7 @@ body {
   }
 }
 
-/* small screen arrows */
+/* ? small screen arrows */
 
 #arrow-small a {
   position: absolute;
@@ -670,19 +672,4 @@ body {
     display: none;
   }
 }
-
-/* .about-me {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-  font-size: 16px;
-  color: white;
-  font-family: Roboto, Arial, sans-serif;
-}
-.about-me a {
-  color: white;
-}
-.about-me a:hover {
-  color: #6666ff;
-} */
+/* ! arrows end here */
