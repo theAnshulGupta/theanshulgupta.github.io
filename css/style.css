@@ -505,13 +505,13 @@ body {
 /*? social buttons end here */
 
 /* ! social buttons version 2 3d */
-.icon-3d {
+.social-shake {
   padding: 10px;
   -webkit-animation: shake 200ms 10;
   animation: shake 200ms 10;
   color: black;
 }
-.icon-3d:hover {
+.social-shake:hover {
   -webkit-animation: shake 200ms infinite;
   animation: shake 200ms infinite;
 }
