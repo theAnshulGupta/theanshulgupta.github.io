@@ -537,19 +537,16 @@ body {
     text-shadow: -5px 0 var(--shake-color1), 5px -4px var(--shake-color2);
   }
 }
-
 /*? social buttons new end */
 
 /*! arrows begin here */
-
 .arrow-hide {
   animation: 3s ease 0s normal forwards 1 fadeIn;
   animation-delay: 3s;
   opacity: 0;
 }
 
-/* ? large screen arrow */
-
+/* * large screen arrow */
 #arrow-large a {
   position: absolute;
   top: 50%;
@@ -617,8 +614,7 @@ body {
   }
 }
 
-/* ? small screen arrows */
-
+/** small screen arrows */
 #arrow-small a {
   position: absolute;
   bottom: 20px;
