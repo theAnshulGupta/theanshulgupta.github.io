@@ -40,7 +40,7 @@ canvas {
   --transition-speed: 600ms;
 }
 
-.navbar {
+#navbar {
   z-index: 10;
   position: fixed;
   background-color: var(--bg-primary);
@@ -143,13 +143,13 @@ canvas {
   padding-left: 2px;
 }
 
-.navbar:hover .logo svg {
+#navbar:hover .logo svg {
   transform: rotate(-540deg);
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-  .navbar {
+  #navbar {
     bottom: 0;
     width: 100vw;
     height: 5rem;
@@ -174,25 +174,25 @@ canvas {
 
 /* Large screens */
 @media only screen and (min-width: 600px) {
-  .navbar {
+  #navbar {
     top: 0;
     width: 5rem;
     height: 100vh;
   }
 
-  .navbar:hover {
+  #navbar:hover {
     width: 15rem;
   }
 
-  .navbar:hover .link-text {
+  #navbar:hover .link-text {
     display: inline;
   }
 
-  .navbar:hover .logo svg {
+  #navbar:hover .logo svg {
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text {
+  #navbar:hover .logo-text {
     left: 2px;
   }
 }
