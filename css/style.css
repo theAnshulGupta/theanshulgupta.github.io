@@ -5,6 +5,10 @@
   padding: 0;
   scrollbar-width: none;
 }
+
+:root {
+  --animation-delay: 3s;
+}
 html body {
   background-color: black;
 }
@@ -16,10 +20,9 @@ html body {
 /*! particles start here */
 canvas {
   display: block;
-  opacity: 0;
-  animation: fadeIn 3s;
+  animation: var(--animation-delay) ease 0s normal forwards 1 fadeIn;
   animation-delay: 3s;
-  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 #particles-js {
@@ -50,9 +53,9 @@ canvas {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  opacity: none;
+  animation: var(--animation-delay) ease 0s normal forwards 1 fadeIn;
   animation-delay: 3s;
-  animation: 7s ease 0s normal forwards 1 fadeIn;
+  opacity: 0;
 }
 
 .navbar-nav {
@@ -375,7 +378,7 @@ canvas {
 
 /* ! Social start here */
 .socials {
-  animation: 3s ease 0s normal forwards 1 fadeIn;
+  animation: var(--animation-delay) ease 0s normal forwards 1 fadeIn;
   animation-delay: 3s;
   opacity: 0;
 }
@@ -534,7 +537,7 @@ canvas {
 
 /*! arrows begin here */
 .arrow-hide {
-  animation: 3s ease 0s normal forwards 1 fadeIn;
+  animation: var(--animation-delay) ease 0s normal forwards 1 fadeIn;
   animation-delay: 3s;
   opacity: 0;
 }
