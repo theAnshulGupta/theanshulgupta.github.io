@@ -544,8 +544,8 @@ body {
 /* * large screen arrow */
 #arrow-large a {
   position: absolute;
-  top: 50%;
-  left: 10vh;
+  top: 40%;
+  left: 150px;
   display: inline-block;
   transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
@@ -633,7 +633,7 @@ body {
 }
 #arrow-small a span {
   position: absolute;
-  top: 0;
+  bottom: 80px;
   left: 50%;
   width: 24px;
   height: 24px;
