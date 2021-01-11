@@ -5,8 +5,11 @@
   padding: 0;
   scrollbar-width: none;
 }
+body {
+  background-color: black;
+}
 
-#top {
+#home {
   height: 100vh;
   background-color: black;
 }
@@ -38,11 +41,8 @@ canvas {
   --transition-speed: 600ms;
 }
 
-body {
-  margin: 0;
-}
-
 #navbar {
+  z-index: 10;
   padding: none;
 }
 .navbar {
