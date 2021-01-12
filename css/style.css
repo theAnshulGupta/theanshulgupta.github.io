@@ -351,26 +351,70 @@ canvas {
 #hey {
   /* display: none; */
   position: absolute;
-  left: 50%;
-  top: 42%;
-  transform: translate(-50%, -50%);
-  animation-delay: 3s;
+  left: 50vw;
+  top: 42vh;
+  /* transform: translate(-50%, -50%);
+  animation-delay: 3s; */
+  /* border: 1px solid pink; */
 }
 
 #heySVG {
+  /* border: 1px solid red; */
   bottom: 10px;
+  width: 15vw;
+  height: auto;
   position: absolute;
   transform: translate(-50%, -50%);
 }
 
 #anshul {
+  /* border: 1px solid red; */
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 50vw;
+  top: 50vh;
+  width: 65vw;
+  height: auto;
   transform: translate(-50%, -50%);
   animation: fill 0.5s ease forwards 3s;
 }
+
+@media only screen and (min-width: 2000px) {
+  #hey {
+    top: 38vh;
+  }
+}
+
+@media (max-width: 1500px) {
+  #hey {
+    top: 43.5vh;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  #hey {
+    top: 44vh;
+  }
+}
+
 @media (max-width: 950px) {
+  #hey {
+    top: 46vh;
+  }
+}
+
+@media (max-width: 750px) {
+  #hey {
+    top: 47.6vh;
+  }
+}
+
+@media (max-width: 800px) {
+  #hey {
+    top: 48vh;
+  }
+}
+
+/* @media (max-width: 950px) {
   #anshul {
     width: 90%;
   }
@@ -382,8 +426,11 @@ canvas {
     top: 12%;
   }
 }
-@media (max-width: 750px) {
-}
+@media (max-width: 1350px) {
+  #anshul {
+    width: 60vw;
+  }
+} */
 
 #aboutButton {
   position: absolute;
@@ -401,7 +448,7 @@ canvas {
   top: 60%;
   transform: translate(-50%, -50%);
 }
-/* ! end svg top area */
+/* ? end svg top area */
 
 /* ! Social start here */
 .socials {
