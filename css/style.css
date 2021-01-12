@@ -8,6 +8,7 @@
 
 :root {
   --animation-delay: 3s;
+  --small-screen-change: 750px;
 }
 html body {
   background-color: black;
@@ -181,7 +182,7 @@ canvas {
 }
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   #navbar {
     bottom: 0;
     width: 100vw;
@@ -206,7 +207,7 @@ canvas {
 }
 
 /* Large screens */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 750px) {
   #navbar {
     top: 0;
     width: 5rem;
@@ -353,8 +354,8 @@ canvas {
   position: absolute;
   left: 50vw;
   top: 42vh;
-  /* transform: translate(-50%, -50%);
-  animation-delay: 3s; */
+  transform: translate(-50%, -50%);
+  animation-delay: 3s;
   /* border: 1px solid pink; */
 }
 
@@ -401,16 +402,34 @@ canvas {
     top: 46vh;
   }
 }
-
+/* 
 @media (max-width: 750px) {
   #hey {
-    top: 47.6vh;
+    top: 46.5vh;
   }
-}
+} */
 
 @media (max-width: 800px) {
   #hey {
     top: 48vh;
+  }
+}
+
+@media (max-width: 750px) {
+  #hey {
+    top: 46vh;
+  }
+  #heySVG {
+    width: 24vw;
+  }
+  #anshul {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 550px) {
+  #hey {
+    top: 47vh;
   }
 }
 
@@ -457,7 +476,7 @@ canvas {
   opacity: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .socials {
     display: none;
   }
@@ -748,12 +767,12 @@ canvas {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 750px) {
   #arrow-small {
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 930px) {
   #arrow-large {
     display: none;
   }
