@@ -387,7 +387,7 @@ canvas {
 
 @media (max-width: 1500px) {
   #hey {
-    top: 43.5vh;
+    top: 42vh;
   }
 }
 
@@ -645,7 +645,7 @@ canvas {
 /* * large screen arrow */
 #arrow-large a {
   position: absolute;
-  top: 50%;
+  top: 156px;
   left: 150px;
   display: inline-block;
   transform: translate(0, -50%);
@@ -779,7 +779,7 @@ canvas {
     display: none;
   }
 }
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 750px) {
   #arrow-large {
     display: none;
   }
