@@ -645,8 +645,8 @@ canvas {
 /* * large screen arrow */
 #arrow-large a {
   position: absolute;
-  top: 156px;
-  left: 150px;
+  top: 234px;
+  left: 180px;
   display: inline-block;
   transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
