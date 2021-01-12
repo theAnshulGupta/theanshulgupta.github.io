@@ -476,11 +476,11 @@ canvas {
   opacity: 0;
 }
 
-@media only screen and (max-width: 750px) {
+/* @media only screen and (max-width: 750px) {
   .socials {
     display: none;
   }
-}
+} */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -500,6 +500,13 @@ canvas {
   width: 200px;
   height: 200px;
   filter: url("#socials");
+}
+
+@media (max-width: 750px) {
+  .social-home__buttons {
+    top: 0px;
+    right: 0px;
+  }
 }
 .social-home__buttons.step-0 .social-1,
 .social-home__buttons.step-0 .social-2,
