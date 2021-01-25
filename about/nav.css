@@ -14,8 +14,14 @@
   scrollbar-width: none;
 }
 
+#content {
+  margin-left: 5rem;
+  padding: 1rem;
+  background: #000000;
+}
+
 /* body */
-section {
+/* section {
   margin-left: 5rem;
   padding: 1rem;
   background: #000000;
@@ -31,7 +37,7 @@ section {
   font-size: 1.2em;
   color: #fff;
   text-indent: 50px;
-}
+} */
 
 /* text highlight */
 ::selection {
