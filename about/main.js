@@ -1,3 +1,14 @@
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+// tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo("#scroll", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo("#percent", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo("#path", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
+
 let progress = document.getElementById("scroll");
 let p = document.getElementById("percent");
 let max = document.body.scrollHeight - window.innerHeight;
