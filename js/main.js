@@ -188,3 +188,7 @@ function openTab(val) {
   document.getElementById(val + "Button").style.borderBottom =
     "2px solid black";
 }
+
+function onSubmit(token) {
+  document.getElementById("demo-form").submit();
+}

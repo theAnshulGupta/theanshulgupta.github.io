@@ -81,6 +81,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>Anshul Gupta</title>
   </head>
@@ -118,7 +119,7 @@
             </a>
           </li>
           <li class="nav-item-custom">
-            <a class="nav-link-custom">
+            <a class="nav-link-custom" href="#home">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -147,7 +148,7 @@
           </li>
 
           <li class="nav-item-custom">
-            <a href="/about/" class="nav-link-custom">
+            <a href="#about" class="nav-link-custom">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -207,7 +208,7 @@
             </a>
           </li> -->
           <li class="nav-item-custom">
-            <a href="#" class="nav-link-custom">
+            <a href="#contact" class="nav-link-custom">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -235,7 +236,7 @@
             </a>
           </li>
           <li class="nav-item-custom" id="themeButton">
-            <a href="#" class="nav-link-custom">
+            <a class="nav-link-custom">
               <svg
                 class="theme-icon"
                 id="lightIcon"
@@ -720,16 +721,19 @@
         <section id="about" href="#about">
           <div class="row">
             <div class="col-lg-6 col-12">
-              <h1 class="color-gradient-red-yellow">Hi there! I'm Anshul.</h1>
+              <h1>
+                Hi there! I'm
+                <span class="color-gradient-red-yellow">Anshul</span>.
+              </h1>
               <p>
-                I'm a high school student from the Bay Area passionate about
+                I'm a high school student from the Bay Area interested in
                 technology. Feel free to
                 <a href="#contact" class="link-button">contact</a> me for
                 additional information.
               </p>
               <div class="row">
                 <p>
-                  For the most part, this site is still in development, but
+                  For the most part, this site is still in development – but
                   while you're here, check out some
                   <a
                     target="_blank"
@@ -737,7 +741,7 @@
                     href="https://anshulgupta.com/card"
                     >organizations</a
                   >
-                  I've been a part of.
+                  I've been a part of!
                 </p>
               </div>
             </div>
@@ -854,8 +858,43 @@
         </section>
         <section id="contact" href="#contact">
           <div>
-            <i class="fa fa-github fa-4x icon-3d"></i>
-            <i class="fa fa-linkedin fa-4x icon-3d"></i>
+            <div class="row">
+              <div class="col-6">
+                <h1>Contact Me</h1>
+                <form action="https://formspree.io/f/xknqewjn" method="POST">
+                  <div class="form-group">
+                    <label for="formEmail" class="formLabel">Email</label>
+                    <input
+                      type="email"
+                      name="_replyto"
+                      class="form-control"
+                      id="formEmail"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formText" class="formLabel">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="formText"
+                      name="message"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <div
+                      class="g-recaptcha"
+                      data-sitekey="6LerCLEdAAAAAKaUYlb-vehRBxmYp0NMOQ3e7-3J"
+                    ></div>
+                    <input type="submit" id="submit-button" value="Submit" />
+                  </div>
+                </form>
+              </div>
+              <div class="col-6">
+                <i class="fa fa-github fa-4x icon-3d"></i>
+                <i class="fa fa-linkedin fa-4x icon-3d"></i>
+              </div>
+            </div>
           </div>
         </section>
       </div>
