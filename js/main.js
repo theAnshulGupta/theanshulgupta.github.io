@@ -175,3 +175,16 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+
+function openTab(val) {
+  var i;
+  var x = document.getElementsByClassName("org");
+  var y = document.getElementsByClassName("org-button");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    y[i].style.border = "none";
+  }
+  document.getElementById(val).style.display = "block";
+  document.getElementById(val + "Button").style.borderBottom =
+    "2px solid black";
+}
