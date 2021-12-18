@@ -19,6 +19,11 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 
+  --shake-color1: rgba(40, 103, 178, 1);
+  --shake-color2: rgba(33, 150, 243, 1);
+  --shake-color3: #bd2727;
+  --shake-color4: #573e3e;
+
   --red: #da2c4d;
   --yellow: #f8ab37;
   --green: #2ecc71;
@@ -53,6 +58,18 @@ h1 {
   animation-delay: 3s;
   opacity: 0; */
 }
+
+@media screen and (max-width: 750px) {
+  #main-text {
+    padding-top: 4px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 100px;
+  }
+}
+  
+}
+
 /*! particles start here */
 canvas {
   display: block;
@@ -682,19 +699,17 @@ canvas {
 /* ! social buttons version 2 3d icons3d */
 .social-shake {
   padding: 10px;
-  -webkit-animation: shake 200ms 10;
-  animation: shake 200ms 10;
-  color: black;
+  color: var(--alt);
 }
-.social-shake:hover {
+.social-shake-1:hover {
   -webkit-animation: shake 200ms infinite;
   animation: shake 200ms infinite;
 }
-
-:root {
-  --shake-color1: rgba(244, 67, 54, 1);
-  --shake-color2: rgba(33, 150, 243, 1);
+.social-shake-2:hover {
+  -webkit-animation: shake-2 200ms infinite;
+  animation: shake-2 200ms infinite;
 }
+
 @keyframes shake {
   0% {
     text-shadow: 5px 4px var(--shake-color1), -5px -6px var(--shake-color2);
@@ -712,6 +727,24 @@ canvas {
     text-shadow: -5px 0 var(--shake-color1), 5px -4px var(--shake-color2);
   }
 }
+@keyframes shake-2 {
+  0% {
+    text-shadow: 5px 4px var(--shake-color3), -5px -6px var(--shake-color4);
+  }
+  25% {
+    text-shadow: -5px -6px var(--shake-color3), 5px 4px var(--shake-color4);
+  }
+  50% {
+    text-shadow: 5px -4px var(--shake-color3), -8px 4px var(--shake-color4);
+  }
+  75% {
+    text-shadow: -8px -4px var(--shake-color3), -5px -4px var(--shake-color4);
+  }
+  100% {
+    text-shadow: -5px 0 var(--shake-color3), 5px -4px var(--shake-color4);
+  }
+}
+
 /*? social buttons new end */
 
 /*! arrows begin here */
@@ -872,7 +905,7 @@ canvas {
   animation-delay: 3s;
   opacity: 0;
   position: absolute;
-  bottom: 50px;
+  bottom: 90px;
   left: 50%;
   width: 46px;
   height: 46px;
@@ -962,9 +995,7 @@ canvas {
 .org-button {
   background-color: var(--alt);
   color: var(--main);
-  /* border-radius: 5px; */
   padding: 10px;
-  /* font-size: 14px; */
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -972,7 +1003,7 @@ canvas {
   display: inline-block;
 }
 .org-button:first-child {
-  border-bottom: 3px solid var(--main);
+  border-bottom: 2px solid var(--main);
 }
 .org-button:first-child:hover {
   color: #2a74cb;
