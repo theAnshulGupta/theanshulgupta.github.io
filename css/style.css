@@ -31,8 +31,8 @@
   --black-blue-light-2: #404255;
   --black-blue-light-3: #4b4d64;
   --black-light: #424455;
-  --background-c: #000;
-  --main-c: #fff;
+  --alt: #fff;
+  --main: #000;
 }
 html body {
   background-color: black;
@@ -46,8 +46,8 @@ h1 {
 }
 
 #main-text {
-  margin-left: 90px;
-  margin-right: 80px;
+  padding: 40px 80px 100px 90px;
+  background-color: #000;
   font-family: "Raleway", sans-serif;
   /* animation: 1s ease 0s normal forwards 1 fadeIn;
   animation-delay: 3s;
@@ -633,7 +633,7 @@ canvas {
 .waves {
   position: relative;
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   margin-bottom: -7px; /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
@@ -960,8 +960,8 @@ canvas {
 /*! end new arrow */
 
 .org-button {
-  background-color: white;
-  color: black;
+  background-color: var(--alt);
+  color: var(--main);
   /* border-radius: 5px; */
   padding: 10px;
   /* font-size: 14px; */
@@ -972,7 +972,7 @@ canvas {
   display: inline-block;
 }
 .org-button:first-child {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--main);
 }
 .org-button:first-child:hover {
   color: #2a74cb;
@@ -986,7 +986,7 @@ canvas {
   color: #ce7b91;
 }
 .button-wrap {
-  background: white;
+  background: var(--alt);
   align-items: center;
   text-align: center;
   border-radius: 20px;
@@ -997,15 +997,15 @@ canvas {
 }
 
 .link-button {
-  color: #fff;
+  color: var(--alt);
   border-bottom: 2px solid grey;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 .link-button:hover {
   text-decoration: none;
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  color: var(--alt);
+  border-bottom: 2px solid var(--alt);
   transition: all 0.3s ease;
 }
 
