@@ -11,7 +11,7 @@
   --animation-delay: 3s;
   --small-screen-change: 750px;
 
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Open Sans";
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
@@ -45,6 +45,14 @@ h1 {
   height: 90vh;
 }
 
+#main-text {
+  margin-left: 90px;
+  margin-right: 80px;
+  font-family: "Raleway", sans-serif;
+  /* animation: 1s ease 0s normal forwards 1 fadeIn;
+  animation-delay: 3s;
+  opacity: 0; */
+}
 /*! particles start here */
 canvas {
   display: block;
@@ -986,4 +994,30 @@ canvas {
 
 .org-wrap {
   margin: 10px;
+}
+
+.link-button {
+  color: #fff;
+  border-bottom: 2px solid grey;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.link-button:hover {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.color-gradient-red-yellow {
+  background: linear-gradient(160deg, #ff718c, var(--yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-red-yellow .uil:before {
+  background: linear-gradient(160deg, #ff718c, var(--yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
