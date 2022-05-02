@@ -322,3 +322,13 @@ body {
     }
 
   }
+  @media (max-width: 650px){
+    #info{
+      display: none;    
+    }
+    #social{
+      left: -70px;
+    }
+  
+  }
+  
