@@ -1,5 +1,6 @@
 body {
     font-family: Montserrat, sans-serif;
+    font-weight: 900;
   }
   body,
   body * {
@@ -18,11 +19,24 @@ body {
   }
   #info{
     text-align: center;
+    font-weight: 600;
     z-index: 10;
     position: fixed;
     left: 50%;
     bottom: 200px;
     font-size: 18px;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+  #credits{
+    text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    font-size: 13px;
     width: 100vw;
     transform: translate(-50%, -50%);
     margin: 0 auto;
@@ -156,7 +170,7 @@ body {
   .content {
     top: 0;
     left: 0;
-    position: absolute;
+    position: absolute;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,10 +182,12 @@ body {
   
   h1 {
     user-select: none;
+    z-index: 15;
     font-size: 100px;
     color: #000;
     margin: 0;
     text-align: center;
+    font-weight: 800;
   }
   
   @media (min-width: 420px) {
@@ -224,6 +240,7 @@ body {
   }
   .navbar{
     border-radius: 5px;
+    font-weight: 700;
   }
 
   #big-dropdown{
@@ -331,4 +348,15 @@ body {
     }
   
   }
+  @media(max-height: 720px){
+    #info{
+      bottom: 100px;
+    }
+  }
+  @media(max-height: 510px){
+    #info{
+      bottom: 50px;
+    }
+  }
+
   
