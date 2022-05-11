@@ -31,10 +31,26 @@ $(window).scroll(function () {
     $("#credits-secret").fadeOut(delay);
   }
 });
-
+var socialMediaSize = "20px";
 $(document).ready(function () {
   $(document).mousemove(function () {
     if ($("#oldSite:hover").length != 0) {
+      changeCursor(0, "#2A2E34", 40);
+    } else if ($(".progress-wrap:hover").length != 0) {
+      changeCursor(0, "#ffcc57", 20);
+    } else if ($("#github:hover").length != 0) {
+      changeCursor(0, "#171515", 20);
+    } else if ($("#linkedin:hover").length != 0) {
+      changeCursor(0, "#0072b1", socialMediaSize);
+    } else if ($("#github:hover").length != 0) {
+      changeCursor(0, "#171515", socialMediaSize);
+    } else if ($("#gmail:hover").length != 0) {
+      changeCursor(0, "#c71610", socialMediaSize);
+    } else if ($("a.nav-link:hover").length != 0) {
+      changeCursor(0, "#171515");
+    } else if ($("a.dropdown-item:hover").length != 0) {
+      changeCursor(0, "#171515");
+    } else if ($("a:hover").length != 0) {
       changeCursor(0);
     } else {
       changeCursor(1);
@@ -46,12 +62,13 @@ $(document).ready(function () {
 //   changeCursor(0);
 // });
 
-function changeCursor(val) {
+function changeCursor(val, bg = "#005ffe", size = "23px", border = "none") {
   if (val == 0) {
     $("#cursor").css({
-      "background-color": "#005ffe",
-      width: "40px",
-      height: "40px",
+      "background-color": bg,
+      width: size,
+      height: size,
+      border: border,
     });
   } else {
     $("#cursor").css({
@@ -59,6 +76,7 @@ function changeCursor(val) {
       border: "0",
       width: "30px",
       height: "30px",
+      border: "none",
     });
   }
 }
