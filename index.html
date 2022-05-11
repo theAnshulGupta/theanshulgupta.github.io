@@ -97,9 +97,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="cursor"></div>
-    <div id="top">
-      <div id="home">
+    <div id="cursor"></div>
+    <div id="home">
+      <div id="top">
         <div id="shapes">
           <div class="shape shape-1"></div>
           <div class="shape shape-2"></div>
@@ -109,6 +109,120 @@
           <h1 id="hero-text">Anshul Gupta.</h1>
           <h1 id="hero-text-mobile">ag.</h1>
         </div>
+      </div>
+      <div id="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">anshul gupta.</a>
+            <button
+              class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarScrollingDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Projects
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    style="left: 0"
+                    aria-labelledby="navbarScrollingDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#" target="_blank"
+                        >Projects</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" target="_blank"
+                        >Patents</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" target="_blank"
+                        >Publications</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Awards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Press</a>
+                </li>
+                <li class="nav-item dropdown" id="big-dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarScrollingDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Contact
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarScrollingDropdown"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://linkedin.com/in/theAnshulGupta"
+                        target="_blank"
+                        >Linkedin</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://github.com/theAnshulGupta"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="mailto:hi.anshulg@gmail.com"
+                        target="_blank"
+                        >Email</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
       <section id="scroll" class="demo">
         <a href="#about"><span></span></a>
@@ -259,211 +373,99 @@
           <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
       </div>
-
-      <div id="social">
-        <div class="wrapper">
-          <div class="line"></div>
-          <div class="wordwrapper">
-            <div class="word">
-              <a href="mailto:hi.anshulg@gmail.com" target="_blank"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="gmail"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-linkedin"
-                  data-darkreader-inline-stroke=""
-                  style="--darkreader-inline-stroke: currentColor"
-                >
-                  <g>
-                    <path
-                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                    ></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </g></svg
-              ></a>
-            </div>
-            <div class="word">
-              <a
-                href="https://www.linkedin.com/in/theAnshulGupta"
-                aria-label="Linkedin"
-                target="_blank"
-                rel="noreferrer"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="linkedin"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-linkedin"
-                  data-darkreader-inline-stroke=""
-                  style="--darkreader-inline-stroke: currentColor"
-                >
-                  <title>LinkedIn</title>
+    </div>
+    <div id="about">
+      <p>I'm still working on this. Come back soon!</p>
+    </div>
+    <div id="social">
+      <div class="wrapper">
+        <div class="line"></div>
+        <div class="wordwrapper">
+          <div class="word">
+            <a href="mailto:hi.anshulg@gmail.com" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="gmail"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-linkedin"
+                data-darkreader-inline-stroke=""
+                style="--darkreader-inline-stroke: currentColor"
+              >
+                <g>
                   <path
-                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
                   ></path>
-                  <rect x="2" y="9" width="4" height="12"></rect>
-                  <circle cx="4" cy="4" r="2"></circle></svg
-              ></a>
-            </div>
-            <div class="word">
-              <a
-                href="https://github.com/theAnshulGupta"
-                aria-label="GitHub"
-                target="_blank"
-                rel="noreferrer"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  id="github"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-github"
-                  data-darkreader-inline-stroke=""
-                  style="--darkreader-inline-stroke: currentColor"
-                >
-                  <title>GitHub</title>
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                  ></path></svg
-              ></a>
-            </div>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </g></svg
+            ></a>
+          </div>
+          <div class="word">
+            <a
+              href="https://www.linkedin.com/in/theAnshulGupta"
+              aria-label="Linkedin"
+              target="_blank"
+              rel="noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="linkedin"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-linkedin"
+                data-darkreader-inline-stroke=""
+                style="--darkreader-inline-stroke: currentColor"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle></svg
+            ></a>
+          </div>
+          <div class="word">
+            <a
+              href="https://github.com/theAnshulGupta"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                id="github"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+                data-darkreader-inline-stroke=""
+                style="--darkreader-inline-stroke: currentColor"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path></svg
+            ></a>
           </div>
         </div>
       </div>
-      <div id="main">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">anshul gupta.</a>
-            <button
-              class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-              <span class="toggler-icon bottom-bar"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#home"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarScrollingDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Projects
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    style="left: 0"
-                    aria-labelledby="navbarScrollingDropdown"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="#" target="_blank"
-                        >Projects</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#" target="_blank"
-                        >Patents</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#" target="_blank"
-                        >Publications</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Awards</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Press</a>
-                </li>
-                <li class="nav-item dropdown" id="big-dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarScrollingDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Contact
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarScrollingDropdown"
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="https://linkedin.com/in/theAnshulGupta"
-                        target="_blank"
-                        >Linkedin</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="https://github.com/theAnshulGupta"
-                        target="_blank"
-                        >Github</a
-                      >
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="mailto:hi.anshulg@gmail.com"
-                        target="_blank"
-                        >Email</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
     </div>
-    <div id="about"></div>
-    <!-- partial -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <script src="./script.js"></script>
+    <div id="scripts">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+      <script src="./script.js"></script>
+    </div>
   </body>
 </html>
