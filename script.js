@@ -15,6 +15,17 @@ document.body.addEventListener("mousemove", (evt) => {
   });
 });
 
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  $("body").css({ cursor: "default" });
+  $("cursor").css({ display: "none" });
+} else {
+  // false for not mobile device
+}
+
 var offset = 25;
 var delay = 200;
 
