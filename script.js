@@ -32,20 +32,38 @@ $(window).scroll(function () {
   }
 });
 
-(function ($) {
-  "use strict";
-
-  //Switch dark/light
-
-  $(".switch").on("click", function () {
-    if ($("body").hasClass("light")) {
-      $("body").removeClass("light");
-      $(".switch").removeClass("switched");
+$(document).ready(function () {
+  $(document).mousemove(function () {
+    if ($("#oldSite:hover").length != 0) {
+      changeCursor(0);
     } else {
-      $("body").addClass("light");
-      $(".switch").addClass("switched");
+      changeCursor(1);
     }
   });
+});
+
+// $("#oldSite").hover(function () {
+//   changeCursor(0);
+// });
+
+function changeCursor(val) {
+  if (val == 0) {
+    $("#cursor").css({
+      "background-color": "#005ffe",
+      width: "40px",
+      height: "40px",
+    });
+  } else {
+    $("#cursor").css({
+      "background-color": "#2128bd",
+      border: "0",
+      width: "30px",
+      height: "30px",
+    });
+  }
+}
+(function ($) {
+  "use strict";
 
   $(document).ready(function () {
     "use strict";
