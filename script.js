@@ -21,7 +21,7 @@ if (
   )
 ) {
   $("body").css({ cursor: "default" });
-  $("cursor").css({ display: "none" });
+  $(".cursor").css({ display: "none" });
 } else {
   // false for not mobile device
 }
