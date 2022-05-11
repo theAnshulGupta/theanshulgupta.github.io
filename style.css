@@ -56,6 +56,18 @@ body * {
   transform: translate(-50%, -50%);
   margin: 0 auto;
 }
+#credits-secret{
+  text-align: center;
+  font-weight: 400;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  font-size: 13px;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
 #oldSite{
   position: absolute;  
   right: 35px;
@@ -82,14 +94,14 @@ body * {
   bottom: 0;
   z-index: 1;
   width: 20px;
-  background: white;
+  background: var(--white);
   height: 240px;
 }
 .wrapper {
   position: relative;
   width: 250px;
   height: 300px;
-  background: white;
+  background: var(--white);
 
   margin: 10px;
 }
@@ -170,7 +182,7 @@ transition: color 0.5s;
 
 
 #nav{
-  background-color: white;
+  background-color: var(--white);
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -523,4 +535,8 @@ body.light .progress-wrap {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
+}
+#about{
+  height: 100vh;
+  background-color: black;
 }

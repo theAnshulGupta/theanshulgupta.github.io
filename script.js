@@ -1,3 +1,4 @@
+$("#credits-secret").hide();
 document.body.addEventListener("mousemove", (evt) => {
   const mouseX = evt.clientX;
   const mouseY = evt.clientY;
@@ -22,10 +23,12 @@ $(window).scroll(function () {
     // $("#info").fadeOut(delay);
     $("#oldSite").fadeOut(delay);
     $("#credits").fadeOut(delay);
+    $("#credits-secret").fadeIn(delay);
   } else {
     // $("#info").fadeIn(delay);
     $("#oldSite").fadeIn(delay);
     $("#credits").fadeIn(delay);
+    $("#credits-secret").fadeOut(delay);
   }
 });
 
