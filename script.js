@@ -151,8 +151,13 @@ window.mobileCheck = function () {
   return check;
 };
 
+// change text in #info
+
 if (window.mobileCheck()) {
   $("#cursor").css({
     display: "none",
   });
 }
+
+// $("#info").text(window.mobileCheck());
+// console.log(window.mobileCheck());
