@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- icon -->
+    <link rel="icon" href="img/user.png" />
+
+    <!-- meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <meta name="googlebot" content="noindex" />
+    <meta name="robots" content="noindex" />
+
+    <title>Anshul Gupta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/a67076b181.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div id="home">
+      <div id="top">
+        <div id="shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+        <div class="content">
+          <h1 id="hero-text">Anshul Gupta.</h1>
+          <h1 id="hero-text-mobile">ag.</h1>
+        </div>
+      </div>
+      <div id="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">anshul gupta.</a>
+            <button
+              class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/projects">Contact</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="/awards">Github</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/press/">LinkedIn</a>
+                </li> -->
+
+                <li class="nav-item" id="big-dropdown">
+                  <a
+                    class="nav-link"
+                    href="https://github.com/theAnshulGupta"
+                    target="_blank"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section id="scroll" class="demo">
+        <a href="#about"><span></span></a>
+      </section>
+      <div id="info" class="text-content">
+        freshman at mit<br />
+        Welcome to my website!
+        <a href="https://github.com/theAnshulGupta" target="_blank">Github</a>
+      </div>
+
+      <div id="credits">scroll down for more</div>
+      <div id="credits-secret">welcome to my website</div>
+
+      <div id="main-content" class="container">
+        <div id="about" class="text-content">
+          <div class="row">
+            <div class="col-6">
+              <h1>About Me</h1>
+              <p>
+                Hi there! I'm Anshul, a student studying computer science and
+                management at MIT drawn to the whole world of startups and tech.
+                I like exploring human-computer interaction and its intersection
+                with design and accessibility. Previously, I've worked on
+                projects like
+                <a href="https://auesome.co" target="_blank">AUesome</a> and
+                research within the fields of digital phenotyping, generative
+                music, and content analysis. You might find me playing
+                percussion or reading in my free time.
+              </p>
+            </div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+        <div class="progress-wrap">
+          <svg
+            class="progress-circle svg-content"
+            width="100%"
+            height="100%"
+            viewBox="-1 -1 102 102"
+          >
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div>~/ end</div>
+      <div>
+        <a href="/">home</a>
+        <a href="/projects">projects</a>
+        <a href="/awards">awards</a>
+        <a href="/press">press</a>
+        <a href="https://github.com/theAnshulGupta">github</a>
+        <a href="https://auesome.co">auesome</a>
+      </div>
+    </div>
+    <div id="scripts">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+      <script src="./main.js"></script>
+    </div>
+  </body>
+</html>
