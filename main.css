@@ -6,6 +6,7 @@
     --white: #fff;
     --black: #000;
     --offwhite: #f8f2dc;
+    --offblue:#a1e3d2;
   }
   *{
     scroll-margin: 55px;
@@ -78,35 +79,7 @@
     margin: 0 auto;
   }
   
-  #oldSite {
-    position: absolute;
-    right: 35px;
-    bottom: 35px;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    color: var(--black);
-  }
-  
-  #oldSite span {
-    font-size: 10px;
-    color: var(--black);
-    text-align: center;
-    display: table;
-    margin: 0 auto;
-    margin-top: 5px;
-    font-weight: 600;
-  }
-  
-  #social {
-    position: fixed;
-    left: 30px;
-    z-index: 2;
-    bottom: 0;
-    width: 20px;
-    background: var(--white);
-    height: 240px;
-  }
+
   
   .wrapper {
     position: relative;
@@ -115,45 +88,7 @@
     background: var(--white);
     margin: 10px;
   }
-  
-  #gmail {
-    width: 25px;
-    height: 25px;
-    color: grey;
-    transition: color 0.5s;
-  
-  }
-  
-  #gmail:hover {
-    color: #c71610;
-    transition: color 0.5s;
-  }
-  
-  #linkedin {
-    width: 25px;
-    height: 25px;
-    color: grey;
-    transition: color 0.5s;
-  }
-  
-  #linkedin:hover {
-    color: #0072b1;
-    transition: color 0.5s;
-  }
-  
-  #github {
-    width: 25px;
-    height: 25px;
-    color: grey;
-    transition: color 0.5s;
-  
-  }
-  
-  #github:hover {
-    color: #171515;
-    transition: color 0.5s;
-  }
-  
+    
   .word:nth-child(2) {
     padding-top: 18px;
     padding-bottom: 18px;
@@ -605,21 +540,15 @@
     z-index: 20;
     /* border: 2px solid black; */
     width: 100%;
-    padding: 15vh 50px;
-    margin: 50px 0;    
+    padding: 20vh 50px;
   }
 
-  
-  
   #main-content h1 {
     font-size: 35px;
-    font-weight: 600;
     text-align: left;
-  }
-  #main-content #about h1 {
     font-weight: 700;
-  }
 
+  }
   
   #main-content p {
     padding-top: 8px;
@@ -629,7 +558,7 @@
     z-index: 10;
     margin-bottom: 1px;
     text-align: left;
-    font-size: 17px;
+    font-size: 16px;
   }
   
   
@@ -638,22 +567,25 @@
     margin-top: 10px;
   }
   
-  #main-content a:hover, #main-content a:focus, #info a:hover, #info a:focus, #footer a:hover, #footer a:focus{
+  #about a:hover, #about a:focus, #contact .mit a:hover, #contact .mit a:focus, #footer a:hover, #footer a:focus{
     background-position-y: 101%;
     color:inherit;
   }
-  #main-content a, #info a, #footer a{
+  #about a, #contact .mit a, #footer a{
     color: black;
     text-decoration: none;
     position: relative;
     background-position-y: 20%;
-    background-image: linear-gradient(#fff 50%, #ffcc57 50%);
+    background-image: linear-gradient(var(--offwhite) 50%, #ffcc57 50%);
     transition: background 0.2s ease;
     background-size: 2px;
     background-size: auto 175%;
   }
-  #main-content a{
+  #about a, #footer a{
     background-image: linear-gradient(var(--offwhite) 50%, #ffcc57 50%) !important;
+  }
+  #contact .mit a{
+    background-image: linear-gradient(var(--offblue) 50%, #ffcc57 50%) !important;
   }
   .about-images{
     margin-top: 15px;
@@ -685,29 +617,133 @@
       font-size: 15px;
     }
   }
-  
-  .stanford, .ttlm-thetahacks, .school-clubs, .other{
-    padding-top: 40px;
-  }
-  .club {
-    font-weight: 500;
-  }
-  #summer h1{
-    margin-bottom: 10px;
-  }
-  
-  h3{
-    font-size: 16px;
-  }
+
   
   #footer{
     /* background-color: white; */
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     text-align: center;
+    margin-top: 15vh;
     padding-top: 30px;
     /* margin-top: 50px; */
     font-weight: 500;
     padding-bottom: 30px;
     border-top: 1px solid black;
   }
+
+  @media screen and (max-width: 991px) {
+    .words-wrap-wrap {
+      margin-bottom: 100px;
+    }
+    #contact{
+      padding-top: 7vh;
+    }
+  }
+
+  #contact {
+    background-color: var(--offblue);    
+    z-index: 20;    
+    /* border: 2px solid black; */
+    width: 100%;
+    padding: 10vh 50px 15vh;
+  }
+
+  #contact .Words {
+    transform: translate3d(0, 0, 0);
+    font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-kerning: normal;
+    -webkit-text-size-adjust: 100%;
+    padding-left: 0;
+  }
+  #contact .Words p{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    /* font-family: "Source Sans Pro"; */
+  }
+  
+  /*
+  ** Apply common styles to each line of text
+  */
+  .Words-line {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+  .Words-line:nth-child(odd) {
+    transform: skew(60deg, -30deg) scaleY(0.66667);
+  }
+  .Words-line:nth-child(even) {
+    transform: skew(0deg, -30deg) scaleY(1.33333);
+  }
+  .Words-line:nth-child(1) {
+    left: 29px;
+  }
+  .Words-line:nth-child(2) {
+    left: 58px;
+  }
+  .Words-line:nth-child(3) {
+    left: 87px;
+  }
+  .Words-line:nth-child(4) {
+    left: 116px;
+  }
+  .Words-line:nth-child(5) {
+    left: 145px;
+  }
+  .Words-line:nth-child(6) {
+    left: 174px;
+  }
+
+  
+  /*
+  ** Fine-grained text styles
+  */
+  .Words-line p {
+    height: 50px;
+    line-height: 45px;
+    /* padding: 0 10px; */
+    transition: all 0.4s ease-in-out;
+    transform: translate3d(0, 0, 0);
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  /*
+  ** The hover interaction
+  */
+  .Words:hover p {
+    transform: translate3d(0, -50px, 0);
+  }
+
+  .words-wrap{
+    display: flex;
+  }
+
+  .social a{    
+    color: #000;
+    transition: color 0.5s;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .social.linkedin a:hover{
+    color:#0072b1;
+    transition: color 0.5s;
+
+  }
+
+  .social.github:hover a{
+    color: #6a4a9b;
+    transition: color 0.5s;
+  }
+  #contact .mit{
+    bottom: 0 !important;
+    position: absolute !important;
+    font-size: 16px;
+
+  }
+
