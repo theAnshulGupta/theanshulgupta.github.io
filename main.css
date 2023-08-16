@@ -9,7 +9,7 @@
     --offblue:#a1e3d2;
   }
   *{
-    scroll-margin: 55px;
+    scroll-margin: 70px;
   }
   
   body {
@@ -237,6 +237,8 @@
   .navbar {
     border-radius: 5px;
     font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   #big-dropdown {

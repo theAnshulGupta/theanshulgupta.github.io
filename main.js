@@ -54,10 +54,7 @@ $(document).ready(function () {
       changeCursor(0, "#005ffe");
     } else if ($("a.dropdown-item:hover").length != 0) {
       changeCursor(0, "#171515");
-    } else if (
-      $("#m:hover").length != 0 ||
-      $(".words-wrap-wrap:hover").length != 0
-    ) {
+    } else if ($("#m:hover").length != 0 || $(".Words:hover").length != 0) {
       changeCursor(0, "#fff", 30);
     } else if ($("a:hover").length != 0) {
       changeCursor(0);
