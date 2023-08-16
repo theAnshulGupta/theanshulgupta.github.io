@@ -635,14 +635,18 @@
   @media screen and (max-width: 991px) {
     .words-wrap-wrap {
       /* margin-bottom: 100px; */
-      display:none;
+      display: none;
     }
+
     #contact{
       padding: 5vh !important;
 
     }
     #moma-parent{
       margin-top: 50px;
+    }
+    #about{
+      padding: 15vh 50px !important;
     }
   }
 
@@ -726,8 +730,11 @@
 
   .words-wrap{
     display: flex;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  
   }
-
   .social a{    
     color: #000;
     transition: color 0.5s;

@@ -46,19 +46,19 @@ $(document).ready(function () {
   $(document).mousemove(function () {
     if ($(".progress-wrap:hover").length != 0) {
       changeCursor(0, "#ffcc57", 20);
-    } else if ($("#github:hover").length != 0) {
-      changeCursor(0, "#171515", 20);
-    } else if ($("#linkedin:hover").length != 0) {
-      changeCursor(0, "#0072b1", socialMediaSize);
-    } else if ($("#github:hover").length != 0) {
-      changeCursor(0, "#171515", socialMediaSize);
-    } else if ($("#gmail:hover").length != 0) {
-      changeCursor(0, "#c71610", socialMediaSize);
+    } else if ($("a.github:hover").length != 0) {
+      changeCursor(0, "#6a4a9b", 20);
+    } else if ($("a.linkedin:hover").length != 0) {
+      changeCursor(0, "#0072b1", 20);
     } else if ($("a.nav-link:hover").length != 0) {
-      // changeCursor(0, "#171515");
       changeCursor(0, "#005ffe");
     } else if ($("a.dropdown-item:hover").length != 0) {
       changeCursor(0, "#171515");
+    } else if (
+      $("#m:hover").length != 0 ||
+      $(".words-wrap-wrap:hover").length != 0
+    ) {
+      changeCursor(0, "#fff", 30);
     } else if ($("a:hover").length != 0) {
       changeCursor(0);
     } else {
