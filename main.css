@@ -537,7 +537,7 @@
   }
   
   #about {
-    z-index: 20;
+    /* z-index: 20; */
     /* border: 2px solid black; */
     width: 100%;
     padding: 20vh 50px;
@@ -634,10 +634,12 @@
 
   @media screen and (max-width: 991px) {
     .words-wrap-wrap {
-      margin-bottom: 100px;
+      /* margin-bottom: 100px; */
+      display:none;
     }
     #contact{
-      padding-top: 7vh;
+      padding: 5vh !important;
+
     }
     #moma-parent{
       margin-top: 50px;
@@ -646,7 +648,7 @@
 
   #contact {
     background-color: var(--offblue);    
-    z-index: 20;    
+    /* z-index: 20;     */
     /* border: 2px solid black; */
     width: 100%;
     padding: 9vh 50px 15vh;
