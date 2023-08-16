@@ -639,6 +639,9 @@
     #contact{
       padding-top: 7vh;
     }
+    #moma-parent{
+      margin-top: 50px;
+    }
   }
 
   #contact {
@@ -646,7 +649,7 @@
     z-index: 20;    
     /* border: 2px solid black; */
     width: 100%;
-    padding: 10vh 50px 15vh;
+    padding: 9vh 50px 15vh;
   }
 
   #contact .Words {
@@ -747,3 +750,16 @@
 
   }
 
+
+  #moma-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #m {  
+    width:400px;
+    height:250px;
+    left:50%
+  }
