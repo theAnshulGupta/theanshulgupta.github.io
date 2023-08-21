@@ -177,6 +177,8 @@ window.onscroll = function (e) {
 // $("#info").text(window.mobileCheck());
 // console.log(window.mobileCheck());
 
+//! p5
+
 let frame = 0;
 
 let varying = "precision highp float; varying vec2 vPos;";
@@ -300,7 +302,7 @@ function setup() {
   let canvasHeight = parentDiv.height;
 
   mandel = createCanvas(canvasWidth, canvasHeight, WEBGL); // Create canvas with dimensions matching the parent div
-  mandel.parent(parentDiv); // Append the canvas to the parent div
+  mandel.parent(parentDiv);
   mandel = createShader(vs, fs);
   shader(mandel);
   mandel.setUniform("t", frame);
