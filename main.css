@@ -749,6 +749,11 @@
     transition: color 0.5s;
 
   }
+  .social.twitter a:hover{
+    color:#1DA1F2;
+    transition: color 0.5s;
+
+  }
 
   .social.github:hover a{
     color: #6a4a9b;
